@@ -130,12 +130,12 @@ The device is engineered around an integrated power delivery network that guaran
 #### C. ILI9341 LCD TFT Shield Display
 * **Purpose:** Serves as the primary physical User Interface (UI), presenting onboard setup question paths, real-time micro-climate metrics, structural state variables, and active count-down windows.
 * **Hardware Integration:** Communicates via a high-speed synchronous SPI bus routed across the following pins:
-  * $\text{TFT\_CS} \rightarrow \text{GPIO42}$
-  * $\text{TFT\_DC} \rightarrow \text{GPIO41}$
-  * $\text{TFT\_RST} \rightarrow \text{GPIO40}$
-  * $\text{TFT\_SCK} \rightarrow \text{GPIO36}$
-  * $\text{TFT\_MISO} \rightarrow \text{GPIO37}$
-  * $\text{TFT\_MOSI} \rightarrow \text{GPIO35}$
+  * `TFT_CS` $\rightarrow$ `GPIO42`
+  * `TFT_DC` $\rightarrow$ `GPIO41`
+  * `TFT_RST` $\rightarrow$ `GPIO40`
+  * `TFT_SCK` $\rightarrow$ `GPIO36`
+  * `TFT_MISO` $\rightarrow$ `GPIO37`
+  * `TFT_MOSI` $\rightarrow$ `GPIO35`
 
 #### D. 3.3V Piezoelectronic Buzzer
 * **Purpose:** Generates discrete audio prompts for scheduling alerts, critical level flags, and immediate keypad tactile feedback clicks.
