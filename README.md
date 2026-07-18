@@ -1,25 +1,31 @@
 <h1 align="center">Smart Hydration & Break Reminder Device</h1>
 An IoT device built on an ESP32 microcontroller that tracks water intake and uses smart sensors to remind users to stay hydrated and take regular desk breaks. 
 
+---
 ## 📸 Hardware Gallery
 
 <p align="center">
-  <img src="IMG_4121.PNG" width="350" alt="Smart Hydration Device Final Build"><br>
-  <em>Fully Assembled Smart Hydration & Break Reminder Device Prototype</em>
+  <img width="600" alt="Smart Hydration Device Final Build" src="images/IMG_4121.PNG" /><br>
+  <em>Figure: Fully Assembled Smart Hydration & Break Reminder Device Prototype</em>
 </p>
 
 ---
-
 ## Internal Electronics & Fabrication
-Below is the hardware configuration, custom PCB, and physical component layout inside the chassis:
 
-| Chasis Base View | Custom PCB Tracking (Top) | Custom PCB Tracks (Bottom) |
-|---|---|---|
-| ![Internal Assembly](IMG_4085.JPG) | ![PCB Top View](IMG_4122.JPG) | ![PCB Bottom Solder](IMG_4123.JPG) |
-
-| Sensor Module Routing | Top Base View | Bottom Base View |
-|---|---|---|
-| ![Circuit Build](IMG_4073.JPG) | ![Base Enclosure](IMG_4084.JPG) | ![BME280 Environment Sensor](IMG_4086.JPG) |
+<p align="center">
+  <table>
+    <tr>
+      <td align="center"><b>Chassis Base View</b><br><img width="250" src="images/IMG_4085.JPG"/></td>
+      <td align="center"><b>Custom PCB Tracking (Top)</b><br><img width="250" src="images/IMG_4122.JPG"/></td>
+      <td align="center"><b>Custom PCB Tracks (Bottom)</b><br><img width="250" src="images/IMG_4123.JPG"/></td>
+    </tr>
+    <tr>
+      <td align="center"><b>Sensor Module Routing</b><br><img width="250" src="images/IMG_4073.JPG"/></td>
+      <td align="center"><b>Top Base View</b><br><img width="250" src="images/IMG_4084.JPG"/></td>
+      <td align="center"><b>Bottom Base View</b><br><img width="250" src="images/IMG_4086.JPG"/></td>
+    </tr>
+  </table>
+</p>
 
 ---
 
