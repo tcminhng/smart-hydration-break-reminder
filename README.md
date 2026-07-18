@@ -1,5 +1,4 @@
-# Smart Hydration & Break Reminder Device
-
+<h1 align="center">Smart Hydration & Break Reminder Device</h1>
 An IoT device built on an ESP32 microcontroller that tracks water intake and uses smart sensors to remind users to stay hydrated and take regular desk breaks. 
 
 ## 📸 Hardware Gallery
@@ -11,7 +10,7 @@ An IoT device built on an ESP32 microcontroller that tracks water intake and use
 
 ---
 
-### Internal Electronics & Fabrication
+## Internal Electronics & Fabrication
 Below is the hardware configuration, custom PCB, and physical component layout inside the chassis:
 
 | Chasis Base View | Custom PCB Tracking (Top) | Custom PCB Tracks (Bottom) |
@@ -27,6 +26,8 @@ Below is the hardware configuration, custom PCB, and physical component layout i
 ## Abstract
 
 Prolonged sedentary work and inadequate hydration are major contributing factors to chronic fatigue, musculoskeletal strain, and long-term metabolic health issues among students and office workers. To address these challenges, this project introduces the **Smart Hydration & Break Reminder Device** - an intelligent, hardware-integrated IoT solution designed to automate wellness coaching at the desk. By leveraging an ESP32-S3 microcontroller alongside an array of sensors, the device dynamically calculates personalized water intake targets based on user metrics and live ambient conditions (temperature and humidity). Additionally, it tracks sedentary periods using real-time motion vector analysis to adaptively schedule structural breaks. Featuring live local alerts via a TFT LCD shield and a NeoPixel layout, alongside continuous cloud synchronization to a remote Web UI dashboard, this device provides a seamless approach to fostering healthier physical habits in modern workspaces.
+
+---
 
 ## System Functional Features & Specifications
 
@@ -74,6 +75,8 @@ The core loop shifts sequentially between four operational states to ensure prom
 * `ST_DRINK_GRACE`: A temporary grace window allowing the user to drink water or manually log progress via the 3x4 matrix keypad.
 * `ST_IN_BREAK`: Locks interface tracking for the duration of the Calculated Break Time ($CBT$), prompting the user to rest.
 
+---
+
 ## Features
 * **Personalized Hydration Tracking:** Calculates daily water target dynamically using user profile details (age, gender, hours) alongside environmental data.
 * **Environmental & Motion Sensing:** Integrates a BME280 temperature/humidity sensor, MPU6050 accelerometer, and a JSN-SR04T waterproof ultrasonic sensor to monitor real-time water levels.
@@ -81,7 +84,9 @@ The core loop shifts sequentially between four operational states to ensure prom
 * **Alert Notifications:** Uses a WS2812 RGB LED strip and a buzzer to provide clear visual and audible notifications.
 * **Cloud Integration:** Ready for remote logging and monitoring through Firebase real-time databases.
 
-### Components Used
+---
+
+## Components Used
 
 * ESP32-S3-DEVKITC-1-N8R8 Microcontroller
 * LED RGB STRIP AB-FA01206-19700-XA2
@@ -95,6 +100,8 @@ The core loop shifts sequentially between four operational states to ensure prom
 * INIU PD Power Bank (10000mAh)
 * D-FLIFE USB-C PD Trigger Board
 * DROK 12V to 5V Buck Converter
+
+---
 
 ## Theory of Operation
 
@@ -192,20 +199,26 @@ Fill the container with water. The JSN-SR04T sensor will automatically capture t
 * The dashboard features a **Virtual Keypad Simulator** that allows you to control the physical hardware from any web browser.
 * Clicking the **Reanalyze Schedule** button on the web interface pushes an update flag through Firebase, forcing the local ESP32-S3 framework to completely rebuild your custom hydration and break schedules on the fly.
 
-### System Block Diagram
+---
+
+## System Block Diagram
 
 <p align="center">
   <img width="624" height="475" alt="Picture2" src="https://github.com/user-attachments/assets/997498ea-defa-4c92-91d7-4408b44014d8" />
 </p>
 
-### Schematic Diagram of System & PCB
+---
+
+## Schematic Diagram of System & PCB
 
 <p align="center">
   <img width="535" height="445" alt="Picture3" src="https://github.com/user-attachments/assets/dbfbb945-ea6b-4e34-8951-fd170bdaa0ee" /><br>
   <img width="536" height="567" alt="Picture4" src="https://github.com/user-attachments/assets/c23605b4-3c85-4567-8215-0839ca1a3070" />
 </p>
 
-### Mechanical Diagram
+---
+
+## Mechanical Diagram
 
 <p align="center">
   <img width="624" height="553" alt="Picture5" src="https://github.com/user-attachments/assets/c3f78721-b95c-40e9-90c0-903a4cf57099" /><br>
@@ -215,20 +228,26 @@ Fill the container with water. The JSN-SR04T sensor will automatically capture t
   <img width="624" height="500" alt="Picture9" src="https://github.com/user-attachments/assets/5736c48c-b853-4ff7-9c88-4e02ef8c6e94" />
 </p>
 
-### 3D Mechanical Design
+---
+
+## 3D Mechanical Design
 
 <p align="center">
   <img width="624" height="254" alt="Picture10" src="https://github.com/user-attachments/assets/6554924c-e0aa-4a95-9af7-197b6c790602" /><br>
   <img width="430" height="556" alt="Picture11" src="https://github.com/user-attachments/assets/c874448e-9045-4f50-b512-4297c6216176" />
 </p>
 
-### IoT Dashboard page layout design
+---
+
+## IoT Dashboard page layout design
 
 <p align="center">
   <img width="624" height="390" alt="Picture12" src="https://github.com/user-attachments/assets/068e4cff-1915-42c4-a47e-de03e6e6f2a5" /><br>
   <img width="624" height="390" alt="Picture13" src="https://github.com/user-attachments/assets/79b5e711-e480-4cad-995c-8239c85baab2" /><br>
   <img width="624" height="390" alt="Picture14" src="https://github.com/user-attachments/assets/b9b38a02-7175-4b32-a829-110e0cd4f69e" />
 </p>
+
+---
 
 ## References
 
