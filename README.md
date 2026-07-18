@@ -6,7 +6,7 @@ An IoT device built on an ESP32 microcontroller that tracks water intake and use
 
 <p align="center">
   <img src="IMG_4121.PNG" width="350" alt="Smart Hydration Device Final Build"><br>
-  <em>Figure 1: Fully Assembled Smart Hydration & Break Reminder Device Prototype</em>
+  <em>Fully Assembled Smart Hydration & Break Reminder Device Prototype</em>
 </p>
 
 ---
