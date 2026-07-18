@@ -62,15 +62,12 @@ Fluid monitoring is handled using a top-mounted waterproof ultrasonic sensor to 
 
 ### 4. System Core State Machine
 The core loop shifts sequentially between four operational states to ensure prompt button responses without missing scheduled sensor logs:
-+------------+      Time Threshold      +------------+
-|  ST_IDLE   +------------------------->+  ST_ALARM  |
-+-----+------+                          +-----+------+
-      ^                                       |
-      | Break Completed                       | User Hydrates /
-      |                                       | Presses Button
-+-----+------+                          v
-|ST_IN_BREAK |<-------------------------+ST_DRINK_GRACE|
-+------------+      Enters Rest State   +------------+
+
+<p align="center">
+  <img width="624" height="420" alt="Picture1" src="https://github.com/user-attachments/assets/74afb3fc-2b11-4c38-a1a8-5e7647da4124" />
+</p>
+
+
 
 * `ST_IDLE`: Standard operational mode tracking active desk hours and movement arrays.
 * `ST_ALARM`: Triggers the 3.3V piezo buzzer and flashes the TFT screen when a hydration or break window opens.
