@@ -149,10 +149,10 @@ The device is engineered around an integrated power delivery network that guaran
 #### H. MPU6050 6-DOF Accelerometer
 * **Purpose:** Continuously maps spatial acceleration shifts along three physical axes ($X, Y, Z$) to classify user status as either active or stationary.
 * **Dynamic Interval Adjustments:** The derived activity coefficient scales the core time intervals and water intake volumes using the following mathematical updates:
-  $$\text{Hydration Interval} = \left| \text{OG\_Interval} \times (\text{Activity Factor} - 0.3) \right|$$
-  $$\text{Breaktime Interval} = \left| \text{OG\_Interval} \times (\text{Activity Factor} - 0.2) \right|$$
-  $$\text{Water Intake Volume} = \left| \text{OG\_Interval} \times (\text{Activity Factor} + 0.2) \right|$$
-  $$\text{Breaktime Duration} = \left| \text{OG\_Interval} \times (\text{Activity Factor} + 0.3) \right|$$
+  $$\text{Hydration Interval} = \left| \text{OG-Interval} \times (\text{Activity Factor} - 0.3) \right|$$
+  $$\text{Breaktime Interval} = \left| \text{OG-Interval} \times (\text{Activity Factor} - 0.2) \right|$$
+  $$\text{Water Intake Volume} = \left| \text{OG-Interval} \times (\text{Activity Factor} + 0.2) \right|$$
+  $$\text{Breaktime Duration} = \left| \text{OG-Interval} \times (\text{Activity Factor} + 0.3) \right|$$
 
 ---
 
@@ -194,34 +194,41 @@ Fill the container with water. The JSN-SR04T sensor will automatically capture t
 
 ### System Block Diagram
 
-<img width="624" height="475" alt="Picture2" src="https://github.com/user-attachments/assets/997498ea-defa-4c92-91d7-4408b44014d8" />
+<p align="center">
+  <img width="624" height="475" alt="Picture2" src="https://github.com/user-attachments/assets/997498ea-defa-4c92-91d7-4408b44014d8" />
+</p>
 
 ### Schematic Diagram of System & PCB
 
-<img width="535" height="445" alt="Picture3" src="https://github.com/user-attachments/assets/dbfbb945-ea6b-4e34-8951-fd170bdaa0ee" />
-
-<img width="536" height="567" alt="Picture4" src="https://github.com/user-attachments/assets/c23605b4-3c85-4567-8215-0839ca1a3070" />
+<p align="center">
+  <img width="535" height="445" alt="Picture3" src="https://github.com/user-attachments/assets/dbfbb945-ea6b-4e34-8951-fd170bdaa0ee" /><br>
+  <img width="536" height="567" alt="Picture4" src="https://github.com/user-attachments/assets/c23605b4-3c85-4567-8215-0839ca1a3070" />
+</p>
 
 ### Mechanical Diagram
 
-<img width="624" height="553" alt="Picture5" src="https://github.com/user-attachments/assets/c3f78721-b95c-40e9-90c0-903a4cf57099" />
-<img width="556" height="1005" alt="Picture6" src="https://github.com/user-attachments/assets/279051d7-b6ea-409e-a6d0-48cc645bcceb" />
-<img width="624" height="425" alt="Picture7" src="https://github.com/user-attachments/assets/f1a9570a-91d6-47e1-b558-10ee8c40fc5a" />
-<img width="537" height="1015" alt="Picture8" src="https://github.com/user-attachments/assets/91518a4c-543e-42d9-b719-73ec0b5dd508" />
-<img width="624" height="500" alt="Picture9" src="https://github.com/user-attachments/assets/5736c48c-b853-4ff7-9c88-4e02ef8c6e94" />
+<p align="center">
+  <img width="624" height="553" alt="Picture5" src="https://github.com/user-attachments/assets/c3f78721-b95c-40e9-90c0-903a4cf57099" /><br>
+  <img width="556" height="1005" alt="Picture6" src="https://github.com/user-attachments/assets/279051d7-b6ea-409e-a6d0-48cc645bcceb" /><br>
+  <img width="624" height="425" alt="Picture7" src="https://github.com/user-attachments/assets/f1a9570a-91d6-47e1-b558-10ee8c40fc5a" /><br>
+  <img width="537" height="1015" alt="Picture8" src="https://github.com/user-attachments/assets/91518a4c-543e-42d9-b719-73ec0b5dd508" /><br>
+  <img width="624" height="500" alt="Picture9" src="https://github.com/user-attachments/assets/5736c48c-b853-4ff7-9c88-4e02ef8c6e94" />
+</p>
 
 ### 3D Mechanical Design
 
-<img width="624" height="254" alt="Picture10" src="https://github.com/user-attachments/assets/6554924c-e0aa-4a95-9af7-197b6c790602" />
-<img width="430" height="556" alt="Picture11" src="https://github.com/user-attachments/assets/c874448e-9045-4f50-b512-4297c6216176" />
+<p align="center">
+  <img width="624" height="254" alt="Picture10" src="https://github.com/user-attachments/assets/6554924c-e0aa-4a95-9af7-197b6c790602" /><br>
+  <img width="430" height="556" alt="Picture11" src="https://github.com/user-attachments/assets/c874448e-9045-4f50-b512-4297c6216176" />
+</p>
 
 ### IoT Dashboard page layout design
 
-<img width="624" height="390" alt="Picture12" src="https://github.com/user-attachments/assets/068e4cff-1915-42c4-a47e-de03e6e6f2a5" />
-<img width="624" height="390" alt="Picture13" src="https://github.com/user-attachments/assets/79b5e711-e480-4cad-995c-8239c85baab2" />
-<img width="624" height="390" alt="Picture14" src="https://github.com/user-attachments/assets/b9b38a02-7175-4b32-a829-110e0cd4f69e" />
-
-### Reference
+<p align="center">
+  <img width="624" height="390" alt="Picture12" src="https://github.com/user-attachments/assets/068e4cff-1915-42c4-a47e-de03e6e6f2a5" /><br>
+  <img width="624" height="390" alt="Picture13" src="https://github.com/user-attachments/assets/79b5e711-e480-4cad-995c-8239c85baab2" /><br>
+  <img width="624" height="390" alt="Picture14" src="https://github.com/user-attachments/assets/b9b38a02-7175-4b32-a829-110e0cd4f69e" />
+</p>
 
 ## References
 
